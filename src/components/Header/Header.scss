@@ -1,0 +1,147 @@
+.header {
+  padding: 25.12px 0 19.15px 0;
+  justify-content: space-between;
+  &__logo {}
+  &__content {
+    &-up {
+      justify-content: space-between;
+      .search {
+        form {
+          padding: 5.49px 12.53px 4.51px;
+          border: 1px solid #E4E4E4;
+          border-radius: 7px;
+          input {
+            all: unset;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 20px;
+
+            /* identical to box height, or 143% */
+            text-transform: uppercase;
+
+            color: #A2ABB5;
+          }
+          button {
+            all: unset;
+            cursor: pointer;
+            img {
+              width: 12.87px;
+              height: 12.87px;
+            }
+          }
+        }
+      }
+      .tender-eye {
+        button {
+          all: unset;
+          border: 1px solid #E4E4E4;
+          border-radius: 7px;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 20px;
+
+          /* identical to box height, or 143% */
+          text-transform: uppercase;
+
+          color: #75818D;
+          padding: 5px 39.69px 5px 39.07px;
+          cursor: pointer;
+          position: relative;
+          &::before {
+            content: url(../../assets/img/Header/eye.svg);
+            position: absolute;
+            left: 15px;
+            top: 6.4px;
+          }
+          &::after {
+            content: url(../../assets/img/Header/arrow-gray.svg);
+            position: absolute;
+            right: 19px;
+          }
+        }
+      }
+    }
+    &-down {
+      margin-top: 10.71px;
+      .links {
+        display: flex;
+        li {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 20px;
+
+          /* identical to box height, or 133% */
+          text-align: right;
+          text-transform: uppercase;
+
+          color: #4F5A65;
+          margin-right: 18px;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+        .active {
+          img {
+            margin-left: 6.25px;
+            position: relative;
+            bottom: 3px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  &__blue {
+    .appointment {
+      button {
+          all: unset;
+          border: 1px solid #E4E4E4;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 18px;
+
+          /* identical to box height */
+          display: flex;
+          align-items: center;
+          text-transform: uppercase;
+
+          color: #FFFFFF;
+
+          background: #056BC9;
+          border-radius: 7px;
+          padding: 5px 45.33px 5px 26.36px;
+          cursor: pointer;
+          position: relative;
+          &::after {
+            content: url(../../assets/img/Header/arrow-white.svg);
+            position: absolute;
+            right: 22px;
+          }
+        }
+    }
+    .phone {
+      display: block;
+      margin-top: 10.21px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 21px;
+      text-align: right;
+      align-items: center;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #4F5A65;
+      position: relative;
+      &::before {
+        content: url(../../assets/img/Header/phone.svg);
+        position: absolute;
+        left: 51px;
+        top: 2px;
+      }
+    }
+  }
+}
